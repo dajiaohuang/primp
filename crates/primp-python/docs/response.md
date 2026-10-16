@@ -1,6 +1,8 @@
 # Response
 
-primp provides a single unified `Response` type that supports both buffered and streaming modes.
+`Client` and module-level request helpers return `Response`; `AsyncClient` returns
+`AsyncResponse`. Both types support buffered and streaming modes, with synchronous
+streaming methods on `Response` and asynchronous streaming methods on `AsyncResponse`.
 
 All properties are synchronous and work identically for both sync and async clients.
 
